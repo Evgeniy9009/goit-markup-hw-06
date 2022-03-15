@@ -787,6 +787,7 @@ img {
   border-radius: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-form {
@@ -797,7 +798,8 @@ img {
 }
 
 .form-field:focus-within > .form-input {
-  border-color: red;
+  border-color: var(--accent-color);
+  outline: transparent;
 }
 
 .form-field:focus-within > .icon-form {
@@ -818,6 +820,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:focus-within {
+  border-color: var(--accent-color);
+  outline: transparent;
 }
 
 .form-label-checkbox {
